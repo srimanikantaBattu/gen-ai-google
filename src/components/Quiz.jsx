@@ -38,7 +38,7 @@ function QuizPage() {
         setScore(0);
         setUserAnswers([]);
         axios
-          .post(`http://localhost:4000/quiz-api/create/${state}`)
+          .post(`https://gen-ai-backend-7qm4.onrender.com/quiz-api/create/${state}`)
           .then((res) => setQuiz(res.data.quiz))
           .catch((err) => console.log(err));
       }

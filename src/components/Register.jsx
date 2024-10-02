@@ -14,7 +14,7 @@ function Register() {
 
   async function formSubmit(data){
     try{
-      const result =await axios .post('http://localhost:4000/user-api/user',data);
+      const result =await axios .post('https://gen-ai-backend-7qm4.onrender.com/user-api/user',data);
       console.log(result)
       if(result.data.message==='User is created'){
         alert('user created')

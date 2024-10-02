@@ -13,7 +13,7 @@ function Login() {
 
   async function formSubmit(data){
     try{
-      const result =await axios .post('http://localhost:4000/user-api/login',data);
+      const result =await axios .post('https://gen-ai-backend-7qm4.onrender.com/user-api/login',data);
       console.log(result.data.message)
       if(result.data.message==='login success'){
         localStorage.setItem('emailId',data.emailId);

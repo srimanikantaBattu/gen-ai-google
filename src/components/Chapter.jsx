@@ -92,7 +92,7 @@ const chapters = [
     useEffect(() => {
       async function getData() {
         try {
-          const res = await axios.post("http://localhost:4000/quiz-api/hello", chapters[chapterNumber]);
+          const res = await axios.post("https://gen-ai-backend-7qm4.onrender.com/quiz-api/hello", chapters[chapterNumber]);
           setData(res.data.message);
         } catch (error) {
           console.error("Error fetching data:", error);

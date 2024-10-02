@@ -14,7 +14,7 @@ function Otp() {
 
     const fetchOtp = async () => {
         try {
-            let tempUser = await axios.get(`http://localhost:4000/user-api/get-tempuser/${email}`);
+            let tempUser = await axios.get(`https://gen-ai-backend-7qm4.onrender.com/user-api/get-tempuser/${email}`);
             if(tempUser && tempUser.data && tempUser.data.payload && tempUser.data.payload.otp){
             setOtp(tempUser.data.payload.otp);
             setData(tempUser.data.payload);
