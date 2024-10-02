@@ -6,7 +6,6 @@ import Login from './components/Login'
 import Register from './components/Register'
 import Otp from './components/Otp'
 import Cards from './components/Cards'
-import Content from './components/Content'
 import Quiz from './components/Quiz'
 import Chapter from './components/Chapter'
 
