@@ -55,7 +55,7 @@ function Otp() {
     async function addUser(decodedCode) {
         try {
             if (decodedCode === otp) {
-                await axios.post(`http://localhost:4000/user-api/check-otp`, { otp: decodedCode });
+                await axios.post(`https://gen-ai-backend-7qm4.onrender.com/user-api/check-otp`, { otp: decodedCode });
                 alert("OTP Verified");
                 navigate("/login");
             } else {
@@ -92,7 +92,7 @@ function Otp() {
         setResendAllowed(false);
         setTimer(90);
         try {
-            const response = await axios.put(`http://localhost:4000/user-api/resend-otp/${email}`);
+            const response = await axios.put(`https://gen-ai-backend-7qm4.onrender.com/user-api/resend-otp/${email}`);
             console.log(response);
             fetchOtp();
         } catch (error) {
