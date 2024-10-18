@@ -88,6 +88,7 @@ const chapters = [
     const navigate = useNavigate();
     const { chapterNumber } = useParams();
     const [data, setData] = useState('');
+    const [subjectNames, setSubjectNames] = useState(chapters[chapterNumber].subjectName);
   
     useEffect(() => {
       async function getData() {
@@ -127,7 +128,7 @@ const chapters = [
           </div>
   
           <div className="mt-6">
-            <button className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition" onClick={()=>navigate('/quiz',{state:{data}})}>
+            <button className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition" onClick={()=>navigate('/quiz',{state:{subjectNames}})}>
               
               Start Quiz
             </button>

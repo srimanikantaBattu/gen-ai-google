@@ -110,8 +110,6 @@ function QuizPage() {
                   e.currentTarget.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
                 }}>
                   <h4 className="text-xl " >{quizIndex+1}. {quiz[quizIndex].question}</h4>
-  
-                  {/* Iterate over the array of options for the current question */}
                   <ul className="pt-2">
                     {quiz[quizIndex].options.map((option, index) => (
                       <li key={index} className="p-2 ps-0 text-lg">
