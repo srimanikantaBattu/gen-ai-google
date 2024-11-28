@@ -126,7 +126,7 @@ function Register() {
                 >
                   Create account
                 </button>
-                <GoogleLogins></GoogleLogins>
+                {/* <GoogleLogins></GoogleLogins> */}
               </span>
             </div>
           </form>

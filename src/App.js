@@ -16,10 +16,10 @@ function App() {
       path:'/',
       element:<RootLayout/>,
       children: [
-        {
-          path: "/",
-          element: <Open />
-        },
+        // {
+        //   path: "/",
+        //   element: <Open />
+        // },
         {
           path: "/login",
           element: <Login />

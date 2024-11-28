@@ -18,7 +18,8 @@ function Login() {
       if(result.data.message==='login success'){
         localStorage.setItem('emailId',data.emailId);
         alert('login successfull')
-        navigate('/chapters');
+        // navigate('/chapters');
+        
       }
       else if(result.data.message==='Invalid Email'){
         alert('Invalid Email')
